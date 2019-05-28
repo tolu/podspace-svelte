@@ -12,7 +12,7 @@ Feature list
 
 - [ ] save pods
 - [ ] auto update feeds
-- [ ] offline
+- [ ] offline <https://shaka-player-demo.appspot.com/docs/api/tutorial-offline.html>
 - [ ] keyboard for everything
 - [ ] serverless xml streamer instead of rss2json fallback?
 - [ ] media session api

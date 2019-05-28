@@ -22,6 +22,13 @@
     console.log("select episode", target);
     selectedEpisode = target.href;
   }
+
+  var dateFmt = new Intl.DateTimeFormat("nb", {
+    year: "numeric",
+    month: "short",
+    day: "2-digit"
+  });
+  const formatDate = date => dateFmt.format(date);
 </script>
 
 <style>
@@ -116,7 +123,7 @@
             <li>
               <a href={p.enclosure.url} on:click|preventDefault={selectEpisode}>
                 {@html p.title}
-                - {p.duration}
+                - {p.duration} ({formatDate(new Date(p.pubDate))})
               </a>
             </li>
           {/each}

@@ -14,7 +14,12 @@ export const getFeedItems = async (feedUrl: string): Promise<IRssItems> => {
   let text: string = "";
   let json: any;
   try {
-    response = await fetch(feedUrl);
+    response = await fetch(
+      `https://podspacexmlfeedproxy.azurewebsites.net/api/GetXmlAsJson?xmlUrl=${encodeURIComponent(feedUrl)}`,
+      {
+        headers: { "x-functions-key": "Nv5Ss2Y/n1eARce7ZEwkr8kF562UPcoYJlViTkY9mD4vfw6aBr/Bzw==" }
+      }
+    );
     text = await response.text();
   } catch (error) {
     console.error("OH NOES", error);
