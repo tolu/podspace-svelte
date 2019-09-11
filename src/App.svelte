@@ -5,9 +5,21 @@
   let episode;
 </script>
 
+<svelte:head>
+  <style>
+    body {
+      background: #1e1e1e;
+      color: #eee;
+      font-size: 16px;
+    }
+    a {
+      color: #eee;
+    }
+  </style>
+</svelte:head>
 <style>
   h1 {
-    color: purple;
+    color: white;
   }
   .app-wrapper {
     display: flex;
