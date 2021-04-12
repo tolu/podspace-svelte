@@ -2,6 +2,9 @@
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
 
+> [Sanity article I followed](https://www.sanity.io/guides/using-typescript-with-svelte)  
+> [Sanity client reference](https://www.sanity.io/docs/js-client)
+
 ## Creating a project
 
 If you're seeing this, you've probably already done this step. Congrats!

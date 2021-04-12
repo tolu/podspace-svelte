@@ -24,5 +24,8 @@
 		"typescript": "^4.0.0",
 		"vite": "^2.1.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@sanity/client": "^2.7.1"
+	}
 }
