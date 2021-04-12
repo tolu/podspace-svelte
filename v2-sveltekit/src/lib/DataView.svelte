@@ -7,7 +7,13 @@
   let collection: Movie[] = [];
 
 	onMount(async () => {
-		const query = '*[_type == "movie"][0...1]';
+		const query = `*[_type == "movie"]{
+			_id,
+			title,
+			poster{asset->{url}},
+			'imageUrl': poster.asset->url,
+			'description': overview[0].children[0].text
+		}[0...1]`;
     collection = await sanityClient.fetch(query);
 
 		// const res = await typedFetch<Movie>(
