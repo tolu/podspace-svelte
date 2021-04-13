@@ -4,6 +4,7 @@ Everything you need to build a Svelte project, powered by [`create-svelte`](http
 
 > [Sanity article I followed](https://www.sanity.io/guides/using-typescript-with-svelte)  
 > [Sanity client reference](https://www.sanity.io/docs/js-client)
+> [GROQ Arcade](https://groq.dev/)
 
 ## Creating a project
 
